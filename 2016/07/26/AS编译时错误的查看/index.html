@@ -4,14 +4,12 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>android23里使用apache包 | hyt</title>
+    <title>AS编译时错误的查看 | hyt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="cooker">
     
-    <meta name="description" content="To continue using the Apache HTTP APIs, you must first declare the following compile-time dependency in your build.gradle file:
-android {
-useLibrary ‘">
+    <meta name="description" content="在用AS编译工程时有些错误并不会显示在gradle console里 需要看到一些详细的信息可以这样做：1.打开AS的setting–&amp;gt;Compiler–&amp;gt;在Command-line Options里加上–stacktrace –info2.打开命令行cd到当前应用的目录下 输入命令./">
     
     
     
@@ -67,15 +65,15 @@ useLibrary ‘">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/07/25/android23里使用apache包/" title="android23里使用apache包" itemprop="url">android23里使用apache包</a>
+      <a href="/2016/07/26/AS编译时错误的查看/" title="AS编译时错误的查看" itemprop="url">AS编译时错误的查看</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="cooker">cooker</a>
     </p>
   <p class="article-time">
-    <time datetime="2016-07-25T07:47:07.000Z" itemprop="datePublished">2016-07-25</time>
-    更新日期:<time datetime="2016-07-25T07:48:34.000Z" itemprop="dateModified">2016-07-25</time>
+    <time datetime="2016-07-26T07:08:00.000Z" itemprop="datePublished">2016-07-26</time>
+    更新日期:<time datetime="2016-07-26T07:17:25.000Z" itemprop="dateModified">2016-07-26</time>
     
   </p>
 </header>
@@ -87,9 +85,7 @@ useLibrary ‘">
 		
 		</div>
 		
-		<p>To continue using the Apache HTTP APIs, you must first declare the following compile-time dependency in your build.gradle file:</p>
-<p>android {</p>
-<p>useLibrary ‘org.apache.http.legacy’<br>}</p>
+		<p>在用AS编译工程时有些错误并不会显示在gradle console里 需要看到一些详细的信息<br>可以这样做：<br>1.打开AS的setting–&gt;Compiler–&gt;在Command-line Options里加上–stacktrace –info<br>2.打开命令行cd到当前应用的目录下 输入命令./gradlew build 就能看到gradle console里看不到的错误。<br>如果这个时候报出 ./gradlew —info build 错误 输入sudo chmod +x gradlew</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -99,7 +95,7 @@ useLibrary ‘">
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2016/07/25/android23里使用apache包/" data-title="android23里使用apache包 | hyt" data-tsina="null" class="share clearfix">
+  <div data-url="http://yoursite.com/2016/07/26/AS编译时错误的查看/" data-title="AS编译时错误的查看 | hyt" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -108,19 +104,11 @@ useLibrary ‘">
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/07/26/AS编译时错误的查看/" title="AS编译时错误的查看">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  AS编译时错误的查看</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/06/12/hello-world/"  title="Hello World">
+<a href="/2016/07/25/android23里使用apache包/"  title="android23里使用apache包">
  <strong>NEXT:</strong><br/> 
- <span>Hello World
+ <span>android23里使用apache包
 </span>
 </a>
 </div>
